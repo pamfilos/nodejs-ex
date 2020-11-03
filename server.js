@@ -10,7 +10,6 @@ const client_secret = process.env.OAUTH_CLIENT_SECRET;
 const authUrl = `https://github.com/login/oauth/authorize?client_id=${client_id}&scope=repo,user`;
 const tokenUrl = "https://github.com/login/oauth/access_token";
 
-const app = express();
 Object.assign=require('object-assign')
 
 app.engine('html', require('ejs').renderFile);
